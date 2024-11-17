@@ -1,12 +1,14 @@
 # Traffic-Light-Controller-Using-Verilog-HDL
-Aim
+
+# Aim
 To design and simulate a traffic light controller using Verilog HDL, and verify its functionality through a testbench in the Vivado 2023.1 simulation environment. The objective is to control the traffic lights for a junction with a specific time-based sequence for Red, Yellow, and Green lights.
 
-Apparatus Required
+# Apparatus Required
 Vivado 2023.1 or equivalent Verilog simulation tool.
 Computer system with a suitable operating system.
 FPGA board (optional for hardware verification).
-Procedure
+
+# Procedure
 Launch Vivado 2023.1:
 
 Open Vivado and create a new project.
@@ -29,8 +31,10 @@ Save and Document Results:
 
 Capture screenshots of the waveform and save the simulation logs to include in your report.
 
-Verilog Code for Traffic Light Controller
+# Verilog Code 
 
+# Traffic Light Controller
+```
 // traffic_light_controller.v
 module traffic_light_controller (
     input wire clk,
@@ -84,9 +88,16 @@ module traffic_light_controller (
         endcase
     end
 endmodule
+```
 
-Testbench for Traffic Light Controller
+# Output
 
+![image](https://github.com/user-attachments/assets/d5fb1a57-c6a6-47ff-bbb9-8497616d480d)
+
+
+# Testbench for Traffic Light Controller
+
+```
 // traffic_light_controller_tb.v
 `timescale 1ns / 1ps
 
@@ -128,11 +139,12 @@ module traffic_light_controller_tb;
     end
 
 endmodule
+```
 
-Output
+# Output
 
-![image](https://github.com/user-attachments/assets/8dbda1e3-72f9-4b98-94cd-33bf31bd04f3)
+![image](https://github.com/user-attachments/assets/f12ccfe9-da31-4ee2-ace6-47953d7bc4e0)
 
 
-Conclusion
+# Conclusion
 In this experiment, a traffic light controller was successfully designed and simulated using Verilog HDL. The design controlled the traffic lights to switch between Green, Yellow, and Red in a cyclic manner based on timing intervals. The testbench verified that the traffic lights followed the correct sequence and timing. The simulation results confirm the correct functionality of the traffic light controller, demonstrating the effectiveness of Verilog HDL in designing FSM-based controllers for real-world applications.
